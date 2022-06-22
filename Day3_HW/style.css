@@ -117,11 +117,17 @@ img {
                 width: 100%;
                 max-width: 100%;
                 margin: 0px;
+                border-bottom-right-radius:0px ;
+                border-bottom-left-radius:0px ;
                 
     }
     img {
         margin:1rem;
        }
+    
+    .myBtn {margin:0.5rem ;
+            padding: 0.9rem;
+            }
 }
 
 
