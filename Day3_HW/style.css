@@ -130,6 +130,14 @@ img {
             }
 }
 
+@media (min-width:335px){
+    #first_div {
+                
+                border-bottom-right-radius:15px ;
+                border-bottom-left-radius:15px;
+                 } 
+}
+
 
 
 
