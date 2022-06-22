@@ -78,8 +78,8 @@ img {
            margin-bottom: 8.5vh;}                        
                         
 #first_h1:hover {cursor: pointer; 
-                color:#000;
-                border-bottom:5px solid black ;
+                color:black;
+                border-bottom:3px solid rgba(17, 17, 26, 0.863) ;
                 transition: 0.3s;}
 
 
@@ -111,6 +111,18 @@ img {
         -webkit-transition: none;
         -moz-transition: none;
         transition: none;}
+
+@media (max-width:700px) {
+    #first_div {
+                width: 100%;
+                max-width: 100%;
+                margin: 0px;
+                
+    }
+    img {
+        margin:1rem;
+       }
+}
 
 
 
