@@ -1,127 +1,66 @@
-day = 3 
-switch (day){
-  case 1:
-    console.log('السبت')
-    break
-  case 2:
-    console.log('الاحد')
-    break
-case 3:
-    console.log('الاثنين')
-    break
-case 4:
-  console.log('الثلاثاء')
-  break
+/*Calculate area of a rectangle
 
-case 5:
-  console.log('الاربعاء')
-  break
-case 6:
-  console.log('الخنيس')
-  break
-case 7:
-  console.log('الجمعة')
-  break
-default:
-  console.log('لايوجد')
-  break
+Store the length of rectangle.
+Store the width of rectangle.
+Calculate the area and print the output "The area of the rectangle is: NN"*/
+width = 12
+heght = 12
+console.log(`the erea =  ${width*heght}`)
 
+/*
+The Temperature Converter
+
+Store a celsius temperature into a variable.
+Convert it to fahrenheit and output "NN°C is NN°F".
+Now store a fahrenheit temperature into a variable.
+Convert it to celsius and output "NN°F is NN°C."
+*/ 
+celsius_temp = 34 
+fahrenheit_temp = (9/5)*celsius_temp+23
+console.log(fahrenheit_temp)
+
+//((T(oF)  -  32  ) ×  5)/9
+console.log(((fahrenheit_temp-32)*5)/9)
+
+
+//Loop though this array let Numbers = [23,54,32,87,47] and print the sum of all numbers
+Numbers = [23,54,32,87,47]
+sum = 0
+Numbers.forEach(element => {
+   sum+=element 
+});
+console.log(sum)
+
+/*Create an array of the following numbers [16,4,2,0,19,6]
+Loop through the array elements and print the maximum number of this list to the console.*/
+numbers = [16,4,2,0,19,6]
+max = numbers[0]
+numbers.forEach(elem => {
+if(max < elem){
+    max = elem
 }
+})
+console.log(max)
 
-num = 99
-if(num%2==0){
-  console.log('even')
-}else{
-  console.log('odd')
+/**Reverse Array
+Create an array of the following numbers [1,2,3,4,5,6,7,8,9,10]
+print the array in a reverse order */
+orgnal = [1,2,3,4,5,6,7,8,9,10]
+reverse = []
+
+for(i=0;i<10;i++){
+    reverse.push(orgnal.pop())
 }
-
-grade = 44
-
-if(grade>=90){
-  console.log('A')
-}
-else if(grade>=80 && grade<=89){
-  console.log('B')
-}else if(grade>=70 && grade<=79){
-  console.log('C')
-}else if(grade>=60 && grade<=69){
-  console.log('D')
-}else{
-  console.log('F')
-}
-
-// Leap year
-year = 1988
-if((year % 400 == 0 && year % 4 == 0 ) || !(year % 100 ==0)){
-  console.log(`${year} is a leap year`)
-}
-
-// function
-function print(){
-  console.log('hello')
-}
-print()
-
-// fibnitche
-function fib(n){
-  num1 = 0
-  num2 = 1
-  sum = 0
-  for(i=num1; i< n; i++){
-    sum = num1+num2
-    num1 = num2
-    num2 = sum
-    console.log(sum)
-  }
-
-}
-//fib(5)
-
-const input ={
-  birth_year : 1998,
-  birth_month : 6,
-  birth_day : 28,
-  curent_year : 2022,
-  curent_month : 12,
-  curent_day : 29,
-}
-
-year = input.curent_year  - input.birth_year
-months = input.curent_month - input.birth_month 
-day = input.birth_day - input.curent_day 
-
-console.log(`you are ${year} yers old, ${months} month, and ${day} days old`)
-
-//squares of numbers
-x = 10
-for(i=1;i<x;i++){
-  console.log(i**2)
-}
-
-//power of 2
-i = 90
-num = 32
-while(--i){
-  if(2**i === num || num == 0){
-    console.log(`${true} 2^${i}=${num}`)
-    break
-  }
-
-}
+console.log(reverse)
 
 
-//while loop 
-i = 20
-while(i--){
-  if(i % 2 != 0){
-    console.log(i)
-  }
-}
+/**Declare a variable and assign a number to it.
+Print a right angle triangle using stars to the console. Example: if the variable is 5, the printed pattern will be as follow: */
+length=4
+line = "";
+for (var i = 1; i <= length; i++) {
+      line+="*".repeat(i)+"\n";
+    }
 
-//Nested for loop
-for(i=1;i<=5;i++){
-  console.log(`${i} muiltblication table`)
-  for(j=1; j<=10; j++){
-    console.log(i*j)
-  }
-}
+  
+console.log(line);
